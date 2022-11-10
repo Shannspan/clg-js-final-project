@@ -1,0 +1,333 @@
+html {
+    background: url(../images/Turtle-cliff-beach.jpg) no-repeat top left fixed;
+    background-size: cover;  
+    Background-image: linear-gradient(to right, #ff000000, #D5D3D9), url(../images/Turtle-cliff-beach.jpg);
+}
+
+body {
+    font-family: 'Schoolbell', cursive;   
+    font-size: 1.5em;
+    color:#0e0e62;
+    /*display: flex;
+    flex-flow: column wrap;*/
+    margin: 0;    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+}
+
+a:link {
+    color: #976671;
+}
+
+a:visited {
+    color:#7A896C;
+}
+
+a:active {
+    color: #D5D3D9;
+}
+
+a:hover {
+    color: #9a71a3;
+   
+}
+/*!!Can I make a unique cursor using a photo? or find a shell shaped one? */
+
+article {
+    padding: 0.5em;    
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
+
+h1 {
+    color: #BF9CA4;
+    font-size: 0.8em;
+    list-style: none;
+}
+
+h2 {
+    color: #7A896C;
+    font-size: 1em;
+    padding: 1em;
+}
+
+h3 {
+    color: #6c3d76;
+    font-size: 1.5em;
+}
+
+p {
+    text-align: center;
+    color: palevioletred;
+}
+
+.title-main {
+    position: relative;
+    height: 5em;
+}
+
+.title-cutout {
+  background-color: #D5D3D9;
+  color:  #355B97;
+  font-size: 1.5em; 
+  font-weight: bold;
+  margin: 0 auto; 
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  mix-blend-mode: screen; 
+ 
+}
+
+.topnav {
+    font-size: 0.7em;
+    margin: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#header-component {
+    font-family: 'Rock Salt', cursive;
+    color: #BF9CA4;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;  
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    max-width: 20em;
+    padding-left: 2em;
+}
+#selector {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#selector-output {
+   color: #320E3B;
+   font-size: 1em;
+}
+
+#shell-choice {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: #320E3B;
+    text-align: center;
+    border: none;
+    margin: 1em;
+}
+
+#my-footer {    
+    color: #0e0e62;
+    background-color: lightgray;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 0.5em;    
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    }
+/*note: images used for buttons are easier to manage in html than as background images in css. image for shell button now in html*/
+
+#shell-btn {
+    color:#320E3B;   
+    text-align: center;
+    font-weight: bold;
+    height: 5em;
+    width: 5em;    
+    border: 0.25em dotted palevioletred;
+    opacity: 1;    
+    border-radius: 50%;     
+    margin: 2em; 
+}
+#fave-beach {
+    color: #320E3B;
+    font-size: 1em;
+    text-align: center;
+}
+#shell-array {
+    color: #320E3B;
+    font-size: 1em;
+    text-align: center;
+}
+.wrapper {   
+    border: none;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+#marine-park {
+    text-align: center;
+}
+
+/*API styling*/
+#poem-gen {
+    padding: 0 6em 1em 6em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#poem-btn {
+    color:#320E3B;   
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    background-color: #BF9CA4;
+    height: 8em;
+    width: 8em;    
+    border: 0.5em dotted palevioletred;
+    opacity: 1;    
+    border-radius: 50%;     
+    margin: 2em; 
+}
+#poem-btn:hover {
+    cursor: pointer;
+}
+
+#title-poem {
+    font-size: 1.5em;
+    font-style: italic;
+    color:  aliceblue;
+}
+#author-poem {
+    color: aliceblue;
+}
+#random-poem {
+    color: #320E3B;
+    font-size: 1em;
+    display:flex;
+    flex-direction: column;
+}
+
+/*game styling*/
+
+#game {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+#result {
+    width: 20em;
+    height: 3em;
+    font-size: 1.5em;
+    color: #0275d8;
+    text-align: left;
+}
+
+.restart {
+    color:#320E3B;
+    background-color: paleturquoise;
+    border: none;
+    border-radius: 15%;
+    font-size: 2em;
+    padding: 1em;
+    max-width: 10em;
+    margin-bottom: 2em;
+}
+
+.restart-pop {
+    background-color: plum;
+    font-size: 2.5em;
+}
+
+.restart:hover {
+    cursor: pointer;
+}
+
+#board {
+	width: 20em;
+	height: 20em;
+    margin-left: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2em;
+    background-image: url(/images/tttboard.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+    box-shadow: 0 0 2em 1em #320E3B;   
+}
+
+#board:hover {
+    cursor: pointer;
+}
+
+.circle {
+    background-image: url(/images/game\ o.jpg);
+}
+
+.cross {
+    background-image: url(/images/game\ x.jpg);
+}
+
+.circle,.cross {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.game-title {
+    font-size: 3em;
+    padding: 1em;
+}
+#game-title {
+    color: palevioletred;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+
+    .title-main {
+        font-size: 1em;         
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        padding: 2em;
+    }
+    #random-poem {
+        font-size: 1.5em;
+    }
+    
+}
+
+/*
+Colour palette
+Light
+Tuscany (muted pink) #BF9CA4
+Light Gray #D5D3D9
+Xanadu (olive green)#7A896C
+Dark
+Russian Violet #320E3B
+Prussian Blue #003052*/
