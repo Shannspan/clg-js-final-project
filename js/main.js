@@ -1,10 +1,12 @@
+//All coding on main.js manipulates and presents on index.html
+////Manipulating the DOM to change style 
 document.getElementById("marine-park").style.backgroundColor ="#D5D3D9";
 
 wrappers = document.querySelector(".wrapper");
 
 wrappers.style.backgroundColor = "#cca2ab";
 
-
+//function for text change on mouseover to draw attention to button link to sttgame.html
 const gameTitle = document.getElementById("game-title");
 
 function popShell() {
@@ -15,7 +17,7 @@ function popShell() {
 gameTitle.addEventListener("mouseover",popShell);
 
 
-//Function for Index page Select favourite shell
+//Function for selecting favourite shell
 
 const select = document.querySelector('select');
 const para = document.getElementById("selector-output");

@@ -218,7 +218,8 @@ p {
     flex-direction: column;
 }
 
-/*game styling*/
+/*game styling
+Fix required - how to make game grid more responsive? is left hand anchoring only solution due to board display being grid? */
 #game {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;

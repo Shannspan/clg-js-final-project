@@ -1,16 +1,20 @@
-//TIC TAC TOE ref youtube 'Coding with Russ' BEACHCOMBING PAGE
+////All coding on sttgame.js manipulates and presents on beachcombing.html
+//To create this TIC TAC TOE game I referred to youtube 'Coding with Russ', and made alterations to styling and code to suit this project. I have anotated the code heavily to improve my understanding of the process.
+
 //Create array to hold board data
 let boardData = [
   [0, 0, 0],
   [0, 0, 0],
   [0, 0, 0],
 ]
+
 //Define game variables
 let player = 1;
 let gameOver = false;
 
 //Pull in cells from DOM
 const cellElements = document.querySelectorAll(".cell");
+
 //Pull in result text from DOM
 const resultElement = document.getElementById("result");
 
@@ -53,6 +57,7 @@ function drawMarkers() {
       //update cell class to add circle
     cellElements[(row * 3) + col].classList.add("circle");
     }}}}
+
 //Create function for checking the result of the game -  using maths. Player 1 wins on the board when 3 cells in any direction add up to 3. Likewise, player 2 will add up to -3. (needs to have a return after each endGame condition is met so that there is only one winner or a tie)
 function checkResult() {
   //check rows and columns for winner using a for loop
@@ -69,6 +74,7 @@ function checkResult() {
       return
     }
   }
+
 //Check diagonals for winner 
 let diagonalSum1 = boardData[0][0] + boardData[1][1] + boardData[2][2];
 let diagonalSum2 = boardData[0][2] + boardData[1][1] + boardData[2][0];
@@ -92,6 +98,7 @@ if(boardData[0].indexOf(0) == -1 &&
     return
   }
 }
+
 //Function to end the game and display the result
 function endGame(winner) {
   //Trigger game over
@@ -106,6 +113,7 @@ function endGame(winner) {
     resultElement.innerText = `${winner} player wins!`
   }
 }
+
 //Restart game
 const restartButton = document.getElementById("restart");
 //Add event listener to restart button
@@ -196,7 +204,7 @@ console.log(shells.find(findTen));
 
 document.getElementById("shell-array").innerHTML = "While beachcombing we found " + shells.length + " types of shells, including:" + "<br>" + shells.join(", ");
 
-//Use function and find to isolate individual indexed item from shell array. Still trying to figure out howto style that index item once it is isolated.
+//Fix required - use function and find to isolate individual indexed item from shell array. Still trying to figure out how to style that index item once it is isolated.
 
 function colourFirst(indexItem) {
   return indexItem = [0];
