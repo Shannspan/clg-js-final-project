@@ -17,31 +17,39 @@ header {
     flex-direction: column;
     border-bottom: none;
 }
+span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5em;
+}
 
 .title-main {
     position: relative;
-    height: 5em;
+    height: 4em;
+    margin: 0 0 1em 0; 
+    padding: 1em;
 }
 
 .title-cutout {
   background-color: #D5D3D9;
   color:  #355B97;
   font-size: 1.5em; 
-  font-weight: bold;
-  margin: 0 auto; 
-  padding: 1em;
+  font-weight: bold; 
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 0.1em;
   width: 100%;
   text-align: center;
   position: absolute; 
-  top: 50%; 
+  top: 20%; 
   left: 50%; 
+ 
   transform: translate(-50%, -50%); 
-  mix-blend-mode: screen;  
+  mix-blend-mode: screen; 
 }
 
 .topnav {
     font-size: 0.7em;
-    margin: 1em;
+    margin: 1em 0 0 0;
     display: flex;
     justify-content: space-around;
 }

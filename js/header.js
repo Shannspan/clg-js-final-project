@@ -11,16 +11,18 @@ connectedCallback () {
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     
     <div class="title-main">
-    <div class="title-cutout">A FRINGE OF REEF</div>
+    <div class="title-cutout"><span><sub>A</sub></span> FRINGE OF REEF</div>
     </div>
-    <nav>
-    <div class="topnav">
+    <div>
+    <nav class="topnav">
     <a class="navlinks" href="index.html" target ="_blank"">Home</a>
     <a href="./beachcombing.html" target="_blank">Play</a>   
     <a href="#marinelife">Ocean</a>    
     <a href="./contact.html">Muse</a>
-    </div>
-    </nav> 
+    </nav>
+    </div>  
+    
+   
     </header>
     `;
 }
