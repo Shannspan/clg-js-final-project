@@ -10,13 +10,11 @@ wrappers.style.backgroundColor = "#b3a2b7";
 const gameDoor = document.getElementById("game-door");
 
 function popShell() {
-  gameDoor.style.color = "#8F0040";
+  //gameDoor.classList.toggle("game-door-pop");
   gameDoor.style.fontStretch = "ultra-expanded";
   gameDoor.innerHTML = "Press the Clam Shell to play a game!";
-}
-
+  }
 gameDoor.addEventListener("mouseover",popShell);
-
 
 //Function for selecting favourite shell
 

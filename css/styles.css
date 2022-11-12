@@ -178,6 +178,9 @@ p {
     align-items: center;
     text-align: center;
 }
+#game-door-pop {
+    color: #8F0040;
+}
 
 #fave-beach {
     color: #320E3B;
