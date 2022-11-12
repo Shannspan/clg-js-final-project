@@ -12,11 +12,6 @@ body {
     margin: 0;    
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    border-bottom: none;
-}
 span {   
     font-size: 3em;
 }
@@ -47,10 +42,33 @@ span {
 }
 
 .topnav {
+    overflow: hidden;
     margin: 1em 0 0 0;
     display: flex;
     justify-content: space-around;
 }
+.topnav a {
+    color: #b3a2b7;   
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+.topnav a:visited {
+    color:#a4af9a;
+}
+
+.topnav a:active {
+    color: #D5D3D9;
+}
+
+.topnav a:hover {
+    color: #FDDEC3; 
+}
+.topnav .icon {
+    display: none;
+  }
+
 .navlinks {    
     font-size: 0.7em;
 }
@@ -59,8 +77,6 @@ span {
     font-family: 'Rock Salt', cursive;
     font-weight: bold;
     text-align: center;
-    display: flex;
-    flex-direction: column;  
 }
 
 #main {
@@ -80,21 +96,7 @@ span {
     padding: 0;
     }
 
-a:link {
-    color: #b3a2b7;    
-    text-decoration: none;
-}
-
-a:visited {
-    color:#a4af9a;
-}
-
-a:active {
-    color: #D5D3D9;
-}
-
-a:hover {
-    color: #FDDEC3;      
+  
 }
 /*!!Can I make a unique cursor using a photo? or find a shell shaped one? */
 
@@ -423,6 +425,28 @@ p {
         text-align: center;
         align-items: center;
     }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 /*

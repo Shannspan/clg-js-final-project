@@ -19,6 +19,9 @@ connectedCallback () {
     <a class="navlinks" href="./beachcombing.html" target="_blank">Play</a>   
     <a class="navlinks" href="#marinelife">Ocean</a>    
     <a class="navlinks" href="./contact.html" target="_blank">Muse</a>
+    <a href="javascript:void(0);" class="icon" onclick="respTopNav()">
+    <i class="fa fa-bars"></i>
+  </a>
     </nav>
     </div>  
     
@@ -28,6 +31,15 @@ connectedCallback () {
 }
 }
     customElements.define('header-component', Header);
+
+    function respTopNav() {
+      var x = document.getElementById("header-component");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
 
 
 
