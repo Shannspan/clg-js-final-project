@@ -4,17 +4,18 @@ document.getElementById("marine-park").style.backgroundColor ="#D5D3D9";
 
 wrappers = document.querySelector(".wrapper");
 
-wrappers.style.backgroundColor = "#cca2ab";
+wrappers.style.backgroundColor = "#b3a2b7";
 
 //function for text change on mouseover to draw attention to button link to sttgame.html
-const gameTitle = document.getElementById("game-title");
+const gameDoor = document.getElementById("game-door");
 
 function popShell() {
-  gameTitle.style.color = "#355B97";
-  gameTitle.innerHTML = "Let's play Shell Tac Toe!"
+  gameDoor.style.color = "#8F0040";
+  gameDoor.style.fontStretch = "ultra-expanded";
+  gameDoor.innerHTML = "Press the Clam Shell to play a game!";
 }
 
-gameTitle.addEventListener("mouseover",popShell);
+gameDoor.addEventListener("mouseover",popShell);
 
 
 //Function for selecting favourite shell
@@ -32,7 +33,7 @@ function setShell() {
   } else if (choice === 'trochus') {
     para.textContent = 'A spiralling shell of a marine snail that rises to a conical point. Trochus have been a mainstay of fashion for decades - the "mother of pearl" finish used for buttons and jewellery.';
   } else if (choice === 'clam') {
-    para.textContent = 'The northern waters of Western Australia are home to five of the seven known giant clam species. Maxing out at 260 kgs the largest variety is equally remarkable due to the vivid blue colouring of the living animal.';
+    para.textContent = 'The northern waters of Western Australia are home to five of the seven known giant clam species. Maxing out at 260 kgs, the largest variety is equally remarkable due to the vivid blue colouring of the living animal.';
   } else if (choice === 'turban') {
     para.textContent = 'Often referred to as "periwinkles", this spiral shelled marine snail is unusual because it keeps itself safe with a hard shell door called the operculum.Turban shell operculum are round, flat with a spiral from the centre and are often called "cats eyes".';
   } else {

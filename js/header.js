@@ -16,9 +16,9 @@ connectedCallback () {
     <div>
     <nav class="topnav">
     <a class="navlinks" href="index.html" target ="_blank"">Home</a>
-    <a href="./beachcombing.html" target="_blank">Play</a>   
-    <a href="#marinelife">Ocean</a>    
-    <a href="./contact.html">Muse</a>
+    <a class="navlinks" href="./beachcombing.html" target="_blank">Play</a>   
+    <a class="navlinks" href="#marinelife">Ocean</a>    
+    <a class="navlinks" href="./contact.html" target="_blank">Muse</a>
     </nav>
     </div>  
     
