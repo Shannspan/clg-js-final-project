@@ -214,7 +214,7 @@ console.log(shells.find(colourFirst));
 
 //This only styles the element with an id (eg all text within)
 
-document.getElementById("shell-array").style.color = "#D5D3D9";
+document.getElementById("shell-array").style.color = "#6c3d76";
 
 //Breaking a loop once the array reaches a certain point?
 const gameScore = [10, 2, 27, 19, 51, 75, 35, 68, 82];
