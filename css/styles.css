@@ -11,7 +11,9 @@ body {
     color:#320E3B;
     margin: 0;    
 }
-
+* {
+    box-sizing:border-box;
+}
 span {   
     font-size: 3em;
 }
@@ -42,17 +44,15 @@ span {
 }
 
 .topnav {
-    overflow: hidden;
-    margin: 1em 0 0 0;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-around;
+    padding-top: 1em;
 }
 .topnav a {
     color: #b3a2b7;   
-    float: left;
-    display: block;
-    text-align: center;
-    text-decoration: none;
   }
 .topnav a:visited {
     color:#a4af9a;
@@ -68,9 +68,43 @@ span {
 .topnav .icon {
     display: none;
   }
-
-.navlinks {    
-    font-size: 0.7em;
+.navlinks {
+    width: 100%;
+    padding: 1em;
+    
+}
+.navlinks ul{
+    width: inherit;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.navlinks li {  
+    width: inherit; 
+    font-size: 0.7em; 
+    list-style: none;
+    text-align: center;
+}
+.navlinks li a {
+    width: 100%;
+    text-decoration: none;
+    padding: 1em;
+}
+.toggle-nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3em;
+    height: 1em;
+}
+.toggle-nav .bar {
+    height: 0.5em;
+    width: 100%;
+    background-color: #6c3d76;
+    border-radius: 15%;
+ 
 }
 
 #header-component {
@@ -97,7 +131,7 @@ span {
     }
 
   
-}
+
 /*!!Can I make a unique cursor using a photo? or find a shell shaped one? */
 
 article {
@@ -425,36 +459,14 @@ p {
         text-align: center;
         align-items: center;
     }
-
-    .topnav a:not(:first-child) {
-        display: none;
+    .navlinks ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
     }
-    .topnav a.icon {
-        float: right;
-        display: block;
+        .toggle-nav {
+            display:none;
+        }
     }
 
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-/*
-Colour palette
-Light
-Tuscany (muted pink) #BF9CA4
-Light Gray #D5D3D9
-Xanadu (olive green)#7A896C
-Dark
-Russian Violet #320E3B
-Prussian Blue #003052*/

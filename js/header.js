@@ -13,17 +13,26 @@ connectedCallback () {
     <div class="title-main">
     <div class="title-cutout"><span><sub>A</sub></span> FRINGE OF REEF</div>
     </div>
+
     <div>
-    <nav class="topnav">
-    <a class="navlinks" href="index.html" target ="_blank"">Home</a>
-    <a class="navlinks" href="./beachcombing.html" target="_blank">Play</a>   
-    <a class="navlinks" href="#marinelife">Ocean</a>    
-    <a class="navlinks" href="./contact.html" target="_blank">Muse</a>
-    <a href="javascript:void(0);" class="icon" onclick="respTopNav()">
-    <i class="fa fa-bars"></i>
-  </a>
+        <a href="#" class="toggle-nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        </a>
+       
+        <nav class="topnav"> 
+
+        <div class="navlinks">
+        <ul>
+        <li><a href="index.html" target ="_blank"">Home</a></li>
+        <li><a href="./beachcombing.html" target="_blank">Play</a></li>   
+        <li><a href="#marinelife">Ocean</a></li>    
+        <li><a href="./contact.html" target="_blank">Muse</a></li>
+        <ul>
+    </div>
     </nav>
-    </div>  
+    
     
    
     </header>
@@ -32,15 +41,18 @@ connectedCallback () {
 }
     customElements.define('header-component', Header);
 
-    function respTopNav() {
-      var x = document.getElementById("header-component");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
+    const toggleNav = document.getElementsByClassName("toggle-nav")[0]
 
+    const navlinks = document.getElementsByClassName("navlinks")[0]
+
+//THIS EVENT LISTENER IS CAUSING AN ERROR 
+    // toggleNav.addEventListener('click', () => {
+    //   navlinks.classList.toggle('active')
+    // })
+
+
+
+  
 
 
   
