@@ -7,7 +7,7 @@ poemBtn.addEventListener('click', fetchPoem)
 
 
 function fetchPoem() {
-    fetch(apiPoem)
+    fetch(apiPoem.lines)
     .then((response) => response.json())
     .then((data) => {
         let poemName = data[0].title;
