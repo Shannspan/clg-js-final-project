@@ -11,7 +11,10 @@ connectedCallback () {
     <div class="title-cutout"><span><sub>A</sub></span> FRINGE OF REEF</div>
     </div>
 
-  
+    <div>
+      
+       
+        <nav class="topnav"> 
 
         <div class="navlinks">
         <ul>
