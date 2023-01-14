@@ -2,7 +2,7 @@
 ////Manipulating the DOM to change style 
 document.getElementById("marine-park").style.backgroundColor ="#D5D3D9";
 
-wrappers = document.querySelector(".wrapper");
+//wrappers = document.querySelector(".wrapper");
 
 wrappers.style.backgroundColor = "#b3a2b7";
 
