@@ -1,6 +1,6 @@
 //Contact.html db poetry
 
-const apiPoem = 'https://poetrydb.org/random.text'
+const apiPoem = 'https://poetrydb.org/random/title/sea/author,lines.text'
     console.log(apiPoem);
 
 const poemBtn = document.getElementById('poem-btn');
