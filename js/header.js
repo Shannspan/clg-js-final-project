@@ -41,10 +41,10 @@ connectedCallback () {
 
     const navlinks = document.getElementsByClassName("navlinks")[0]
 
-THIS EVENT LISTENER IS CAUSING AN ERROR 
-    toggleNav.addEventListener('click', () => {
-      navlinks.classList.toggle('active')
-    })
+// THIS EVENT LISTENER IS CAUSING AN ERROR 
+//     toggleNav.addEventListener('click', () => {
+//       navlinks.classList.toggle('active')
+//     })
 
 
 
