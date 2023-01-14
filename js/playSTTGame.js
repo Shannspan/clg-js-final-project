@@ -231,17 +231,3 @@ while (a < gameScore.length) {
   a++;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
