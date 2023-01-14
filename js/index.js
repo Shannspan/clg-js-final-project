@@ -1,10 +1,6 @@
 //Manipulating the DOM to change style 
 document.getElementById("marine-park").style.backgroundColor ="#D5D3D9";
 
-// wrappers.document.querySelector(".wrapper");
-
-// wrappers.style.backgroundColor = "#b3a2b7";
-
 //function for text change on mouseover to draw attention to button link to sttgame.html
 const gameDoor = document.getElementById("game-door");
 
