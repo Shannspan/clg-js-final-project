@@ -26,8 +26,7 @@ connectedCallback () {
         <div class="navlinks">
         <ul>
         <li><a href="index.html" target ="_blank"">Home</a></li>
-        <li><a href="./beachcombing.html" target="_blank">Play</a></li>   
-        <li><a href="#marinelife">Ocean</a></li>    
+        <li><a href="./beachcombing.html" target="_blank">Play</a></li>      
         <li><a href="./contact.html" target="_blank">Muse</a></li>
         <ul>
     </div>
