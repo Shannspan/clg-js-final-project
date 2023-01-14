@@ -1,11 +1,9 @@
 //Contact.html db poetry
 
-const apiPoem = 'https://poetrydb.org/random'
+const apiPoem = 'https://poetrydb.org/random.text'
     console.log(apiPoem);
 
 const poemBtn = document.getElementById('poem-btn');
-
-let list = document.getElementById("my-list");
 
 poemBtn.addEventListener('click', fetchPoem)
 
@@ -16,7 +14,7 @@ function fetchPoem() {
     .then((data) => {
         let poemName = data[0].title;
         let poemWriter = data[0].author;
-        let poemPop = data[0].lines.list;
+        let poemPop = data[0].lines;
         document.getElementById("title-poem").innerHTML = poemName;
         document.getElementById("author-poem").innerHTML = poemWriter;
         document.getElementById("random-poem").innerHTML = poemPop;            
