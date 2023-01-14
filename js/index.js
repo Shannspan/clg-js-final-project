@@ -1,5 +1,4 @@
-//All coding on main.js manipulates and presents on index.html
-////Manipulating the DOM to change style 
+//Manipulating the DOM to change style 
 document.getElementById("marine-park").style.backgroundColor ="#D5D3D9";
 
 //wrappers = document.querySelector(".wrapper");
