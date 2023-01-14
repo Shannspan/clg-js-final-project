@@ -1,4 +1,4 @@
-const apiPoem = 'https://poetrydb.org/random'
+const apiPoem = 'https://poetrydb.org//title,author/Winter:abs;William%20Shakespeare
     console.log(apiPoem);
 
 const poemBtn = document.getElementById('poem-btn');
@@ -12,15 +12,12 @@ function fetchPoem() {
     .then((data) => {
         let poemName = data[0].title;
         let poemWriter = data[0].author;
-        let poemPop = data[0].lines.find(myLines);
+        let poemPop = data[0].lines;
 
         document.getElementById("title-poem").innerHTML = poemName;
         document.getElementById("author-poem").innerHTML = poemWriter;
         document.getElementById("random-poem").innerHTML = poemPop;   
         
-        function myLines(value, index,array) {
-            return array < 30;
-        };
         console.log(data);
     });
 } 
