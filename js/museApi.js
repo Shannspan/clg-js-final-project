@@ -1,4 +1,4 @@
-const apiPoem = 'https://poetrydb.org/title,author/Winter:abs;William%20Shakespeare'
+const apiPoem = 'https://poetrydb.org/random/linecount/30'
     console.log(apiPoem);
 
 const poemBtn = document.getElementById('poem-btn');
