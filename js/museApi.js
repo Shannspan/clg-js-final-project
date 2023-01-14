@@ -7,7 +7,7 @@ poemBtn.addEventListener('click', fetchPoem)
 
 
 function fetchPoem() {
-    fetch(apiPoem.lines)
+    fetch(apiPoem)
     .then((response) => response.json())
     .then((data) => {
         let poemName = data[0].title;
@@ -19,6 +19,7 @@ function fetchPoem() {
         document.getElementById("random-poem").innerHTML = poemPop;   
         
         console.log(data);
+        console.log(poemPop);
     });
 } 
 
