@@ -12,7 +12,11 @@ connectedCallback () {
     </div>
 
     <div>
-      
+        <a href="#" class="toggle-nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        </a>
        
         <nav class="topnav"> 
 
