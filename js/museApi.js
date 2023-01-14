@@ -12,7 +12,7 @@ function fetchPoem() {
     .then((data) => {
         let poemName = data[0].title;
         let poemWriter = data[0].author;
-        let poemPop = data[0].lines;
+        let poemPop = data[0].lines.toString;
 
         document.getElementById("title-poem").innerHTML = poemName;
         document.getElementById("author-poem").innerHTML = poemWriter;
