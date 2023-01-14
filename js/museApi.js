@@ -19,7 +19,7 @@ function fetchPoem() {
         document.getElementById("random-poem").innerHTML = poemPop;   
         
         function myLines(value, index,array) {
-            return index < 30;
+            return array < 30;
         };
         console.log(data);
     });
