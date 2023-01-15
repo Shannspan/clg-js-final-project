@@ -1,4 +1,4 @@
-const apiPoem = 'https://poetrydb.org/random'
+const apiPoem = 'https://poetrydb.org/random/title/sea/title'
     console.log(apiPoem);
 
 const poemBtn = document.getElementById('poem-btn');
