@@ -1,4 +1,4 @@
-const apiPoem = 'https://poetrydb.org/random/title/sea/title'
+const apiPoem = 'https://poetrydb.org/title/sea/title'
     console.log(apiPoem);
 
 const poemBtn = document.getElementById('poem-btn');
@@ -10,9 +10,9 @@ function fetchPoem() {
     fetch(apiPoem)
     .then((response) => response.json())
     .then((data) => {
-        let poemName = data[0].title;
-        let poemWriter = data[0].author;
-        let poemPop = data[0].lines;
+        let poemName = data[0].title.body;
+        let poemWriter = data[0].author.body;
+        let poemPop = data[0].lines.body;
 
         document.getElementById("title-poem").innerHTML = poemName;
         document.getElementById("author-poem").innerHTML = poemWriter;
