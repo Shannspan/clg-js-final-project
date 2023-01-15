@@ -39,4 +39,19 @@ function changeText(){
       counter ++;
     }};
 
-
+// another alternative idea
+//<script>
+// var listOfNames = [
+//     'John',
+//     'David',
+//     'Bob'
+//  ];
+//  count=listOfNames.length-1;
+//  function reverseTheArray(){
+//     document.getElementById('reverseTheArray').innerHTML =
+//     listOfNames[count];
+//     count--;
+//     if (count<0)
+//        count=listOfNames.length-1;
+//  }
+// </script>
