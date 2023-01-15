@@ -18,7 +18,7 @@ function fetchPoem() {
 
         document.getElementById("title-poem").innerHTML = poemName;
         document.getElementById("author-poem").innerHTML = poemWriter;
-        document.getElementById("random-poem").innerHTML = poemPop;   
+        //document.getElementById("random-poem").innerHTML = poemPop;   
         
         //console.log(data);
     });
@@ -26,9 +26,9 @@ function fetchPoem() {
 
 const seaPoem = fetchPoem(); 
 console.log(seaPoem);
-
+// do I need to complete all of fetch poem before running seaPoem? 
 const text = document.getElementById("random-poem");
-text.innerHTML = apiPoem[0];
+text.innerHTML = seaPoem;
 let counter = 1;
 
 function changeText(){
