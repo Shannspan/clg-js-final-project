@@ -1,8 +1,8 @@
 /*Universal styling*/
 html {
-    background: url(../images/Turtle-cliff-beach.jpg) no-repeat top left fixed;
+    background: url(../images/Coral-close-up.jpg) no-repeat top left fixed;
     background-size: cover;  
-    Background-image: linear-gradient(to right, #ff000000, #D5D3D9), url(../images/Turtle-cliff-beach.jpg);
+    Background-image: linear-gradient(to right, #ff000000, #D5D3D9), url(../images/Coral-close-up.jpg);
 }
 
 body {
