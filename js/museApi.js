@@ -13,7 +13,7 @@ function fetchPoem() {
        
         let poemName = data[i++].title;
         let poemWriter = data[i++].author;
-        let poemPop = data[[i++]].lines;
+        let poemPop = data[i++].lines;
 
         document.getElementById("title-poem").innerHTML = poemName;
        
