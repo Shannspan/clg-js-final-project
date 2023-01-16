@@ -1,57 +1,31 @@
 const apiPoem = 'https://poetrydb.org/title/sea'
-    //console.log(apiPoem);
 
-const poemBtn = document.getElementById('poem-btn');
+// new sea based theme for poems required rework of API call:
+// API returns a nested array rather than a single poem unit 
+//(which is what the previous random API poem selection did)
 
-const click = poemBtn.addEventListener('click', fetchPoem ); 
-
-
-// Below function fetchPoem is returning 'undefined' in console - however it IS working to an extent - what does that mean and how can I refine it to make next index in API array of sea poems appear on click? 
+let i = 0;
 
 function fetchPoem() {
     fetch(apiPoem)
     .then((response) => response.json())
     .then((data) => {
-        let poemName = data[0].title;
-        let poemWriter = data[0].author;
-        let poemPop = data[[0]].lines;
+       
+        let poemName = data[i++].title;
+        let poemWriter = data[i++].author;
+        let poemPop = data[[i++]].lines;
 
         document.getElementById("title-poem").innerHTML = poemName;
+       
         document.getElementById("author-poem").innerHTML = poemWriter;
-        //document.getElementById("random-poem").innerHTML = poemPop;   
+
+        document.getElementById("random-poem").innerHTML = poemPop;  
         
-        //console.log(data);
-    });
-} 
+    })};
+    
+fetchPoem();
 
-const seaPoem = fetchPoem(); 
-console.log(seaPoem);
-// do I need to complete all of fetch poem before running seaPoem? 
-const text = document.getElementById("random-poem");
-text.innerHTML = seaPoem;
-let counter = 1;
+const poemBtn = document.getElementById('poem-btn');
 
-function changeText(){
-    var len = apiPoem.length;
-    if(counter < len){
-      console.log(apiPoem[counter]);
-      text.innerHTML = apiPoem[counter];
-      counter ++;
-    }};
+poemBtn.addEventListener('click', fetchPoem); 
 
-// another alternative idea
-//<script>
-// var listOfNames = [
-//     'John',
-//     'David',
-//     'Bob'
-//  ];
-//  count=listOfNames.length-1;
-//  function reverseTheArray(){
-//     document.getElementById('reverseTheArray').innerHTML =
-//     listOfNames[count];
-//     count--;
-//     if (count<0)
-//        count=listOfNames.length-1;
-//  }
-// </script>
