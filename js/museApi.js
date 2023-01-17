@@ -6,12 +6,13 @@ const apiPoem = 'https://poetrydb.org/title/sea'
 
 let i = 0;
 
+
 function fetchPoem() {
     fetch(apiPoem)
     .then((response) => response.json())
     .then((data) => {
 
-        let nextPoem = i++;       
+        let nextPoem = i++;           
         let poemName = data[nextPoem].title;
         let poemWriter = data[nextPoem].author;
         let poemPop = data[nextPoem].lines;
@@ -22,11 +23,9 @@ function fetchPoem() {
 
         document.getElementById("random-poem").innerHTML = poemPop;  
 
-        //possible code solution for returning to start of array once end is reached
+        //possible code solution for returning to start of array once end is reached?
 
-        // for (let i = 0; i < data.length; nextPoem) {
-        //     console.log(data.length);
-        // }
+        // for loop?
 
         
     })};
@@ -37,3 +36,4 @@ const poemBtn = document.getElementById('poem-btn');
 
 poemBtn.addEventListener('click', fetchPoem); 
 
+// the new for loop might need to be here on click
