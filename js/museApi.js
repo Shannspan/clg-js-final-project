@@ -22,18 +22,20 @@ function fetchPoem() {
         document.getElementById("author-poem").innerHTML = poemWriter;
 
         document.getElementById("random-poem").innerHTML = poemPop;  
-
-        //possible code solution for returning to start of array once end is reached?
-
-        // for loop?
-
         
     })};
     
 fetchPoem();
 
+// below code in working in terms of clicking through and restarting BUT it's not the array. can I incluse in the function above as need to refer to the data variable 
+
 const poemBtn = document.getElementById('poem-btn');
 
-poemBtn.addEventListener('click', fetchPoem); 
+poemBtn.addEventListener('click', () => {
+    poemBtn.textContent = fetchPoem[i],
+    i++
+    if(i >= fetchPoem.length) {
+        i = 0
+    }
+}); 
 
-// the new for loop might need to be here on click
