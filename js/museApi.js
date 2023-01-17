@@ -10,16 +10,24 @@ function fetchPoem() {
     fetch(apiPoem)
     .then((response) => response.json())
     .then((data) => {
-       
-        let poemName = data[i++].title;
-        let poemWriter = data[i++].author;
-        let poemPop = data[i++].lines;
+
+        let nextPoem = i++;       
+        let poemName = data[nextPoem].title;
+        let poemWriter = data[nextPoem].author;
+        let poemPop = data[nextPoem].lines;
 
         document.getElementById("title-poem").innerHTML = poemName;
        
         document.getElementById("author-poem").innerHTML = poemWriter;
 
         document.getElementById("random-poem").innerHTML = poemPop;  
+
+        //possible code solution for returning to start of array once end is reached
+
+        // for (let i = 0; i < data.length; nextPoem) {
+        //     console.log(data.length);
+        // }
+
         
     })};
     
