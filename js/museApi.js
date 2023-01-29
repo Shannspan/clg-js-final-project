@@ -22,7 +22,7 @@ function fetchPoem() {
         document.getElementById("author-poem").innerHTML = poemWriter;
 
         document.getElementById("random-poem").innerHTML = poemPop;  
-
+        //to return to start of array and begin again 
         function rotatePoem() {
             if(i < 0) i = data.length - 1;
             if(i === data.length) i = 0;            
@@ -35,5 +35,5 @@ const poemBtn = document.getElementById('poem-btn');
 
 poemBtn.addEventListener('click', fetchPoem);
 
-// Next problem to solve: how to return to start of array? 
+
 
