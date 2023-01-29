@@ -414,6 +414,8 @@ p {
     .topnav {
         margin: 1em 0 0 0;
         display: flex;
+        flex-direction: row;
+        
         justify-content: space-around;
     }
     .navlinks {    
@@ -465,7 +467,7 @@ p {
         display: flex;
         flex-direction: row;
     }
-        .toggle-nav {
+    .toggle-nav {
             display:none;
         }
     }
