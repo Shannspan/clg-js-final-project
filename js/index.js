@@ -5,7 +5,7 @@ document.getElementById("marine-park").style.backgroundColor ="#D5D3D9";
 const gameDoor = document.getElementById("game-door");
 
 function popShell() {
-  gameDoor.style.color = "#8F0040";
+  gameDoor.style.color = "#874061";
   gameDoor.innerHTML = "Press the shell to play!";
   }
 gameDoor.addEventListener("mouseover",popShell);

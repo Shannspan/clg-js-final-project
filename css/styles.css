@@ -8,7 +8,8 @@ html {
 body {
     font-family: 'Schoolbell', cursive;   
     font-size: 1.5em;
-    color:#320E3B;
+    color:#355B97;
+    font-weight: bold;
     margin: 0;    
 }
 * {
@@ -52,10 +53,10 @@ span {
     padding-top: 1em;
 }
 .topnav a {
-    color: #b3a2b7;   
+    color: #355B97;   
   }
 .topnav a:visited {
-    color:#a4af9a;
+    color:#7A896C;
 }
 
 .topnav a:active {
@@ -63,12 +64,12 @@ span {
 }
 
 .topnav a:hover {
-    color: #FDDEC3; 
+    color: #874061; 
 }
 .topnav .icon {
     display: none;
   }
-.navlinks {
+.navlinks {   
     width: 100%;
     padding: 1em;
     
@@ -105,7 +106,7 @@ span {
     background-color: #6c3d76;
     border-radius: 15%;
  
-}
+} 
 
 #header-component {
     font-family: 'Rock Salt', cursive;
@@ -145,7 +146,7 @@ aside {
 }
 
 h1 {
-    color: #b3a2b7;
+    color: #874061;
     font-size: 0.8em;
     list-style: none;
 }
@@ -202,8 +203,7 @@ p {
     margin: 0 0 4em 0; 
 }
 
-#game-door {
-    color:#6c3d76;
+#game-door {    
     font-size: 1em;
     font-style: italic;
     font-weight: bold;
@@ -213,9 +213,7 @@ p {
     align-items: center;
     text-align: center;
 }
-#game-door-pop {
-    color: #8F0040;
-}
+
 
 #fave-beach {
     color: #320E3B;
@@ -229,7 +227,6 @@ p {
     margin: 0 0 4em 0;
 }
 .wrapper { 
-    color:#320E3B;  
     border: none;
     margin: 1em;
     padding: 1em;
@@ -269,14 +266,15 @@ p {
 #title-poem {
     font-size: 1.5em;
     font-style: italic;
-    color:  aliceblue;
+    color: #355B97;
 }
 #author-poem {
-    color: aliceblue;
+    color: #6c3d76;
 }
 #random-poem {
     color: #320E3B;
     font-size: 1em;
+    font-weight: lighter;
     display:flex;
     flex-direction: column;
 }
@@ -327,7 +325,7 @@ p {
     background-size: cover;
     background-position: center;
     border-radius: 15%;
-    box-shadow: 0 0 3em 2em #6c3d76;   
+    box-shadow: 2em 2em 4em 4em  #89536c;   
 }
 
 #board:hover {
@@ -414,8 +412,7 @@ p {
     .topnav {
         margin: 1em 0 0 0;
         display: flex;
-        flex-direction: row;
-        
+        flex-direction: row;        
         justify-content: space-around;
     }
     .navlinks {    
